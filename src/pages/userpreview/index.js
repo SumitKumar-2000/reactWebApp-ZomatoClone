@@ -3,7 +3,6 @@ import '../userpreview/userpreview.css'
 import { Link } from 'react-router-dom'
 import LoadingBar from 'react-top-loading-bar'
 import MoodCollectionCard from './moodcollectioncard'
-import { useGoogleOneTapLogin } from 'react-google-one-tap-login'
 
 const moodCollection = [
   {
@@ -26,14 +25,6 @@ const moodCollection = [
 const UserPreview = () => {
 
   const [progress,setProgress] = useState(0);
-    
-  useGoogleOneTapLogin({
-      onSuccess : (response) => console.log(response),
-      onError : (error) => console.log(error),
-      googleAccountConfigs : {
-        client_id : "982953075230-v4749dorv500qnvl1jjooboorg5s06c5.apps.googleusercontent.com"
-      }
-  })
 
   return (
     <>

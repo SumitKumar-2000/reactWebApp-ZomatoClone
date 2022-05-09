@@ -8,7 +8,7 @@ const ExploreSection = ({list,CityName,activeTab,activeSearchTerm}) => {
       <div className='collection-title'> {activeTab} Restaurants in {CityName} </div>
       <div className='explore-grid'>
           { list.filter((restaurant) => activeSearchTerm !== "" ? (restaurant.info.name.toLowerCase().includes(activeSearchTerm.toLowerCase())) : (restaurant.city_name === CityName)).map(restaurant => {
-                return  <ExploreCard key={restaurant.info.resId} restaurant={restaurant}/>
+                return  <ExploreCard restaurant={restaurant}/>
             })}
       </div>   
     </div>
