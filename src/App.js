@@ -1,6 +1,7 @@
 import React from 'react'
 import HomePage from './pages/home'
 import UserPreview from './pages/userpreview'
+import NoPageFound from './pages/NoPageFound'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 
 const App = () => {
@@ -8,8 +9,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<UserPreview/>} />
+        <Route path='/reactWebApp-ZomatoClone' element={<UserPreview/>} />
         <Route path='/home' element={<HomePage/>} />
+        <Route path='*' element={<NoPageFound/>} />
       </Routes>
     </Router>
   )
