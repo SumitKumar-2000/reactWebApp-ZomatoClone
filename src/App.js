@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Router basename='/reactWebApp-ZomatoClone'>
       <Routes>
-        <Route path='/reactWebApp-ZomatoClone' element={<UserPreview/>} />
+        <Route path='/' element={<UserPreview/>} />
         <Route path='/home' element={<HomePage/>} />
         <Route path='*' element={<NoPageFound/>} />
       </Routes>
