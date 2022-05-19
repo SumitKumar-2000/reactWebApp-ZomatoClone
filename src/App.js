@@ -7,7 +7,7 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 const App = () => {
 
   return (
-    <Router basename='/reactWebApp-FoodOrderingPlatform'>
+    <Router basename='/reactWebApp-ZomatoClone'>
       <Routes>
         <Route path='/reactWebApp-ZomatoClone' element={<UserPreview/>} />
         <Route path='/home' element={<HomePage/>} />
