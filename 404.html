@@ -1,0 +1,66 @@
+Skip to content
+Product 
+Team
+Enterprise
+Explore 
+Marketplace
+Pricing 
+Search
+Sign in
+Sign up
+rafgraph
+/
+spa-github-pages
+Public
+Code
+Issues
+4
+Pull requests
+Actions
+Projects
+Security
+Insights
+spa-github-pages/404.html
+@rafgraph
+rafgraph Update script to make reidrect more readable
+Latest commit 487f403 on Sep 26, 2020
+ History
+ 1 contributor
+40 lines (37 sloc)  1.7 KB
+   
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food App</title>
+    <script type="text/javascript">
+      
+      var pathSegmentsToKeep = 1;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
